@@ -1,0 +1,6 @@
+aiocron
+aiohttp
+aiokafka
+asyncpg
+pydantic
+pyyaml

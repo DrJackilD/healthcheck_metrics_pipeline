@@ -1,0 +1,18 @@
+version: "3"
+
+networks:
+  awh:
+
+services:
+  monitor:
+    build: monitor
+    env_file:
+      - monitor/.env
+    networks:
+      - awh
+  metrics:
+    build: metrics
+    env_file:
+      - metrics/.env
+    networks:
+      - awh

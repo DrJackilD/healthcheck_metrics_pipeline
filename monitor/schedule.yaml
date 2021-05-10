@@ -1,0 +1,10 @@
+# Each entry consist of few fields
+# url - target url to check
+# schedule - crontab style schedule
+# body_regex - regular expression which will be
+#              run onto response body. Can be omitted.
+- url: "https://example.com"
+  schedule: "* * * * * */30"
+  body_regex: '<h1>Example Domain</h1>'
+- url: "https://httpbin.org/delay/300"
+  schedule: "* * * * * */30"
