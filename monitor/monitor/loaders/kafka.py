@@ -69,4 +69,6 @@ class KafkaLoader(AbstractLoader):
         )
 
     async def shutdown(self):
-        await self._conn.stop()
+        if self._conn is not None:
+            await self._conn.stop()
+        logger.debug("KafkaLoader shutdown completed")
