@@ -1,0 +1,25 @@
+language: python
+python:
+  - "3.9"
+# command to install dependencies
+install:
+  - pip install -r metrics/requirements/dev.txt
+# command to run tests
+jobs:
+  include:
+    - name: "Monitor Unit Tests"
+      python: "3.9"
+      before_script:
+        - cd monitor
+      env:
+        - PYTHONPATH=.
+      script:
+        - pytest
+    - name: "Metrics Unit Tests"
+      python: "3.9"
+      before_script:
+        - cd metrics
+      env:
+        - PYTHONPATH=.
+      script:
+        - pytest

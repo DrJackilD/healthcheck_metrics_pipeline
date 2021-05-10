@@ -1,4 +1,5 @@
 # Website Health Monitor
+[![Build Status](https://travis-ci.com/DrJackilD/healthcheck_metrics_pipeline.svg?branch=master)](https://travis-ci.com/DrJackilD/healthcheck_metrics_pipeline)
 
 This tool intended to be used as a health monitor for a various web resources to monitor their health.
 
