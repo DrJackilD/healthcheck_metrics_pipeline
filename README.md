@@ -15,6 +15,10 @@ on application startup (see `monitor/run.py`)
 * Metrics - daemon, which listen to metrics in the Kafka topic, collect them and saves to PostgreSQL instance, or any
 other place defined in one of collectors
 
+## Architecture overview
+
+![WHM Architecture](WebHealthMonitorPipeline.png)
+
 ## Setup and usage
 
 Each service has an `.env` file inside. You should fill it before build and run containers. If you want to connect your services
